@@ -1,0 +1,4 @@
+#!/bin/bash
+
+/opt/Xilinx/14.3/ISE_DS/ISE/bin/lin/promgen -b -w -p bin -data_width 32 -u 0 $1 -o $1.bin
+rm *.prm *.cfi
