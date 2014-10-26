@@ -5,6 +5,7 @@ bitstream: zynq_sys_wrapper.bit
 
 zynq_sys_wrapper.bit: hls_ip
 	vivado -mode batch -source system/vivado_build.tcl	
+	rm *.log *.jou
 
 hls_ip: hls_ip/solution/impl/ip/Imperial_OpenCV_image_filter_1_0.zip
 
