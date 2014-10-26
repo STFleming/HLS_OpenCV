@@ -5,6 +5,10 @@
         <SimFlow name="csim"/>
     </Simulation>
     <files xmlns="">
+        <file name="./src/top.h" sc="0" tb="false" cflags=""/>
+        <file name="./src/top.cpp" sc="0" tb="false" cflags=""/>
+        <file name="../src/top.h" sc="0" tb="false" cflags=""/>
+        <file name="../src/top.cpp" sc="0" tb="false" cflags=""/>
         <file name="hls_ip/src/top.h" sc="0" tb="false" cflags=""/>
         <file name="hls_ip/src/top.cpp" sc="0" tb="false" cflags=""/>
     </files>
