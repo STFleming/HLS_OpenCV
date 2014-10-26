@@ -19,7 +19,7 @@ $(BIN_DIR)/%.o: $(INC_DIR)/%.c $(DEPS)
 $(BIN_DIR)/%.o: $(INC_DIR)/%.cpp $(DEPS)
 	$(CPP) -c -o $@ $< $(CFLAGS)
 
-all: sw_access_test clear_output sw_sobel hw_sobel 
+all: sw_sobel hw_sobel 
 
 sw_sobel: $(COBJS)
 	 $(CPP) $(SRC_DIR)/$@.cpp -o $(BIN_DIR)/$@ $^ $(CFLAGS) $(OPENCV_ARGS)	
